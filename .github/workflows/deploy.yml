@@ -24,7 +24,7 @@ jobs:
       - name: Deploy to Local Machine
         run: |
           ssh -o StrictHostKeyChecking=no bkirouch@gate.lip6.fr << EOF
-            cd /path/to/your/application
+            cd /home/bkirouch/demo/rest-api-demo
             git pull origin main
             ./mvnw clean package
             nohup java -jar target/your-spring-boot-app.jar &
