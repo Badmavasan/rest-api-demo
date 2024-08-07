@@ -23,7 +23,7 @@ jobs:
 
       - name: Deploy to Local Machine
         run: |
-          ssh -o StrictHostKeyChecking=no sunsh@192.168.184.8 << EOF
+          ssh -o StrictHostKeyChecking=no bkirouch@gate.lip6.fr << EOF
             cd /path/to/your/application
             git pull origin main
             ./mvnw clean package
