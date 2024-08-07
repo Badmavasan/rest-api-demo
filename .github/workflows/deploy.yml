@@ -27,5 +27,5 @@ jobs:
             cd /home/bkirouch/demo/rest-api-demo
             git pull origin main
             ./mvnw clean package
-            nohup java -jar target/your-spring-boot-app.jar &
+            nohup java -jar target/rest-api-demo.jar &
           EOF
